@@ -1,0 +1,5 @@
+Training data/
+.venv/
+checkpoints/
+outputs/
+__pycache__/
