@@ -74,7 +74,7 @@ class TrainingConfig:
 
     # Training Hyperparameters — tuned for 4 GB VRAM
     batch_size: int = 4
-    num_epochs: int = 20
+    num_epochs: int = 6
     learning_rate: float = 1e-4
     backbone_lr: float = 2e-5
     weight_decay: float = 1e-4

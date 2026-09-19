@@ -175,6 +175,45 @@ def plot_motion_differential_concept():
     plt.close()
     print(f"Saved: {out_png}")
 
+def plot_clinical_operating_curve():
+    """Plots precision, recall, F1, and accuracy across decision thresholds to identify optimal clinical point."""
+    thresholds = [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85]
+    f1_scores  = [0.9449, 0.9516, 0.9672, 0.9672, 0.9587, 0.9500, 0.9500, 0.9500, 0.9500, 0.9500, 0.9322, 0.9322, 0.9322, 0.9322, 0.9043, 0.9043]
+    recalls    = [0.9524, 0.9365, 0.9365, 0.9365, 0.9206, 0.9048, 0.9048, 0.9048, 0.9048, 0.9048, 0.8730, 0.8730, 0.8730, 0.8730, 0.8254, 0.8254]
+    precisions = [0.9375, 0.9672, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000, 1.0000]
+    accuracies = [0.9457, 0.9535, 0.9690, 0.9690, 0.9612, 0.9535, 0.9535, 0.9535, 0.9535, 0.9535, 0.9380, 0.9380, 0.9380, 0.9380, 0.9147, 0.9147]
+
+    fig, ax = plt.subplots(figsize=(10, 5.5))
+    ax.plot(thresholds, [f*100 for f in f1_scores], label="F1-Score", color="#2563EB", lw=2.5, marker="o")
+    ax.plot(thresholds, [r*100 for r in recalls], label="Recall (Sensitivity)", color="#DC2626", lw=2.2, linestyle="--", marker="s")
+    ax.plot(thresholds, [p*100 for p in precisions], label="Precision (PPV)", color="#059669", lw=2.2, linestyle="-.", marker="^")
+    ax.plot(thresholds, [a*100 for a in accuracies], label="Accuracy", color="#7C3AED", lw=2.0, linestyle=":", marker="d")
+
+    # Optimal operating point highlight
+    opt_thresh = 0.25
+    ax.axvline(opt_thresh, color="#D97706", linestyle="--", lw=1.8, label=r"Optimal Operating Point ($\tau^* = 0.25$)")
+    ax.annotate(r"$\tau^* = 0.25$" + "\n" + r"$\mathbf{Acc: 96.9\%}$" + "\n" + r"$\mathbf{F1: 0.967}$" + "\n" + r"$\mathbf{Prec: 100\%}$",
+                xy=(opt_thresh, 96.9), xytext=(opt_thresh + 0.05, 87),
+                arrowprops=dict(facecolor="#D97706", shrink=0.08, width=1.5, headwidth=6),
+                bbox=dict(boxstyle="round,pad=0.5", facecolor="#FEF3C7", edgecolor="#D97706", linewidth=1.2),
+                fontsize=9.5, fontweight="bold")
+
+    ax.set_title("Clinical Decision Threshold Tradeoff Curve (Validation Set)", fontweight="bold", pad=15)
+    ax.set_xlabel("Decision Threshold $(\\tau)$", fontweight="bold")
+    ax.set_ylabel("Metric Score (%)", fontweight="bold")
+    ax.set_ylim(80, 103)
+    ax.set_xlim(0.08, 0.88)
+    ax.grid(True, linestyle="--", alpha=0.4)
+    ax.legend(loc="lower left", framealpha=0.95, facecolor="#F8FAFC", edgecolor="#CBD5E1")
+
+    plt.tight_layout()
+    out_png = FIGURES_DIR / "fig_clinical_threshold_curve.png"
+    out_pdf = FIGURES_DIR / "fig_clinical_threshold_curve.pdf"
+    plt.savefig(out_png, dpi=300)
+    plt.savefig(out_pdf)
+    plt.close()
+    print(f"Saved: {out_png}")
+
 if __name__ == "__main__":
     # Real benchmark empirical values
     m1 = {"accuracy": 0.6600, "f1": 0.7302, "precision": 0.7667, "recall": 0.6970, "specificity": 0.5882, "auc": 0.6836}
@@ -188,3 +227,4 @@ if __name__ == "__main__":
     plot_three_generation_benchmark(m1, m2, m3)
     plot_confusion_matrix_progression(cm1, cm2, cm3)
     plot_motion_differential_concept()
+    plot_clinical_operating_curve()
