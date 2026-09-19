@@ -1,5 +1,12 @@
 Training data/
 .venv/
 checkpoints/
-outputs/
 __pycache__/
+*.log
+
+# Exclude large model binaries (>50MB) and LaTeX build artifacts
+outputs/*.onnx
+outputs/*.pt
+outputs/*.aux
+outputs/*.log
+outputs/*.out
