@@ -1,0 +1,130 @@
+sample_index,true_label,true_class_name,predicted_label,predicted_class_name,fall_probability,is_correct
+0,1,Fall,1,Fall,0.922363,1
+1,1,Fall,1,Fall,0.974609,1
+2,1,Fall,1,Fall,0.979492,1
+3,1,Fall,1,Fall,0.97998,1
+4,1,Fall,1,Fall,0.981934,1
+5,0,Non-Fall (ADL),0,Non-Fall (ADL),0.023087,1
+6,0,Non-Fall (ADL),0,Non-Fall (ADL),0.023346,1
+7,0,Non-Fall (ADL),0,Non-Fall (ADL),0.02356,1
+8,0,Non-Fall (ADL),0,Non-Fall (ADL),0.02449,1
+9,0,Non-Fall (ADL),0,Non-Fall (ADL),0.024307,1
+10,0,Non-Fall (ADL),0,Non-Fall (ADL),0.023758,1
+11,0,Non-Fall (ADL),0,Non-Fall (ADL),0.024139,1
+12,0,Non-Fall (ADL),0,Non-Fall (ADL),0.024277,1
+13,0,Non-Fall (ADL),0,Non-Fall (ADL),0.023758,1
+14,0,Non-Fall (ADL),0,Non-Fall (ADL),0.022247,1
+15,0,Non-Fall (ADL),0,Non-Fall (ADL),0.021271,1
+16,0,Non-Fall (ADL),0,Non-Fall (ADL),0.022217,1
+17,0,Non-Fall (ADL),0,Non-Fall (ADL),0.025742,1
+18,0,Non-Fall (ADL),0,Non-Fall (ADL),0.027039,1
+19,0,Non-Fall (ADL),0,Non-Fall (ADL),0.023529,1
+20,0,Non-Fall (ADL),0,Non-Fall (ADL),0.022537,1
+21,0,Non-Fall (ADL),0,Non-Fall (ADL),0.023529,1
+22,0,Non-Fall (ADL),0,Non-Fall (ADL),0.021057,1
+23,0,Non-Fall (ADL),0,Non-Fall (ADL),0.018066,1
+24,0,Non-Fall (ADL),0,Non-Fall (ADL),0.019745,1
+25,0,Non-Fall (ADL),0,Non-Fall (ADL),0.02153,1
+26,0,Non-Fall (ADL),0,Non-Fall (ADL),0.022842,1
+27,0,Non-Fall (ADL),0,Non-Fall (ADL),0.032288,1
+28,0,Non-Fall (ADL),0,Non-Fall (ADL),0.029785,1
+29,0,Non-Fall (ADL),0,Non-Fall (ADL),0.027298,1
+30,0,Non-Fall (ADL),0,Non-Fall (ADL),0.027924,1
+31,0,Non-Fall (ADL),0,Non-Fall (ADL),0.027664,1
+32,0,Non-Fall (ADL),0,Non-Fall (ADL),0.030075,1
+33,0,Non-Fall (ADL),0,Non-Fall (ADL),0.029282,1
+34,0,Non-Fall (ADL),0,Non-Fall (ADL),0.027451,1
+35,0,Non-Fall (ADL),0,Non-Fall (ADL),0.027985,1
+36,0,Non-Fall (ADL),0,Non-Fall (ADL),0.023758,1
+37,0,Non-Fall (ADL),0,Non-Fall (ADL),0.022034,1
+38,0,Non-Fall (ADL),0,Non-Fall (ADL),0.019089,1
+39,0,Non-Fall (ADL),0,Non-Fall (ADL),0.024139,1
+40,0,Non-Fall (ADL),0,Non-Fall (ADL),0.024094,1
+41,0,Non-Fall (ADL),0,Non-Fall (ADL),0.025055,1
+42,0,Non-Fall (ADL),0,Non-Fall (ADL),0.025589,1
+43,0,Non-Fall (ADL),0,Non-Fall (ADL),0.028336,1
+44,0,Non-Fall (ADL),0,Non-Fall (ADL),0.029984,1
+45,0,Non-Fall (ADL),0,Non-Fall (ADL),0.0289,1
+46,0,Non-Fall (ADL),0,Non-Fall (ADL),0.031494,1
+47,0,Non-Fall (ADL),0,Non-Fall (ADL),0.034424,1
+48,0,Non-Fall (ADL),0,Non-Fall (ADL),0.028595,1
+49,0,Non-Fall (ADL),0,Non-Fall (ADL),0.028519,1
+50,0,Non-Fall (ADL),0,Non-Fall (ADL),0.027908,1
+51,0,Non-Fall (ADL),0,Non-Fall (ADL),0.027115,1
+52,0,Non-Fall (ADL),0,Non-Fall (ADL),0.027405,1
+53,0,Non-Fall (ADL),0,Non-Fall (ADL),0.029449,1
+54,0,Non-Fall (ADL),0,Non-Fall (ADL),0.028732,1
+55,0,Non-Fall (ADL),0,Non-Fall (ADL),0.033112,1
+56,0,Non-Fall (ADL),0,Non-Fall (ADL),0.035706,1
+57,0,Non-Fall (ADL),0,Non-Fall (ADL),0.032837,1
+58,0,Non-Fall (ADL),0,Non-Fall (ADL),0.034546,1
+59,0,Non-Fall (ADL),0,Non-Fall (ADL),0.02005,1
+60,0,Non-Fall (ADL),0,Non-Fall (ADL),0.018906,1
+61,0,Non-Fall (ADL),0,Non-Fall (ADL),0.01738,1
+62,1,Fall,0,Non-Fall (ADL),0.023102,0
+63,1,Fall,0,Non-Fall (ADL),0.056183,0
+64,1,Fall,1,Fall,0.79834,1
+65,1,Fall,1,Fall,0.964844,1
+66,1,Fall,1,Fall,0.977051,1
+67,1,Fall,1,Fall,0.978027,1
+68,1,Fall,1,Fall,0.979492,1
+69,1,Fall,1,Fall,0.979004,1
+70,1,Fall,1,Fall,0.977051,1
+71,1,Fall,1,Fall,0.979004,1
+72,1,Fall,1,Fall,0.97998,1
+73,1,Fall,1,Fall,0.979492,1
+74,1,Fall,1,Fall,0.979492,1
+75,1,Fall,1,Fall,0.978516,1
+76,1,Fall,1,Fall,0.666016,1
+77,1,Fall,1,Fall,0.774414,1
+78,1,Fall,1,Fall,0.929199,1
+79,1,Fall,1,Fall,0.967285,1
+80,1,Fall,1,Fall,0.970703,1
+81,1,Fall,1,Fall,0.971191,1
+82,1,Fall,1,Fall,0.96875,1
+83,1,Fall,1,Fall,0.966309,1
+84,1,Fall,1,Fall,0.963867,1
+85,1,Fall,1,Fall,0.95752,1
+86,1,Fall,1,Fall,0.951172,1
+87,1,Fall,1,Fall,0.946289,1
+88,1,Fall,1,Fall,0.949219,1
+89,1,Fall,1,Fall,0.952637,1
+90,0,Non-Fall (ADL),0,Non-Fall (ADL),0.063171,1
+91,0,Non-Fall (ADL),0,Non-Fall (ADL),0.068604,1
+92,0,Non-Fall (ADL),0,Non-Fall (ADL),0.059052,1
+93,0,Non-Fall (ADL),0,Non-Fall (ADL),0.049957,1
+94,0,Non-Fall (ADL),0,Non-Fall (ADL),0.061371,1
+95,0,Non-Fall (ADL),0,Non-Fall (ADL),0.082886,1
+96,0,Non-Fall (ADL),0,Non-Fall (ADL),0.054108,1
+97,0,Non-Fall (ADL),0,Non-Fall (ADL),0.045898,1
+98,0,Non-Fall (ADL),0,Non-Fall (ADL),0.096619,1
+99,1,Fall,0,Non-Fall (ADL),0.082214,0
+100,1,Fall,0,Non-Fall (ADL),0.036469,0
+101,1,Fall,1,Fall,0.725586,1
+102,1,Fall,1,Fall,0.960938,1
+103,1,Fall,1,Fall,0.969727,1
+104,1,Fall,1,Fall,0.974121,1
+105,1,Fall,1,Fall,0.979004,1
+106,1,Fall,1,Fall,0.979004,1
+107,1,Fall,1,Fall,0.978516,1
+108,1,Fall,1,Fall,0.979004,1
+109,1,Fall,1,Fall,0.979492,1
+110,1,Fall,1,Fall,0.979492,1
+111,1,Fall,0,Non-Fall (ADL),0.046173,0
+112,1,Fall,1,Fall,0.855469,1
+113,1,Fall,1,Fall,0.96875,1
+114,1,Fall,1,Fall,0.976074,1
+115,1,Fall,1,Fall,0.97998,1
+116,1,Fall,1,Fall,0.981934,1
+117,1,Fall,1,Fall,0.981934,1
+118,1,Fall,1,Fall,0.897461,1
+119,1,Fall,1,Fall,0.952637,1
+120,1,Fall,1,Fall,0.969727,1
+121,1,Fall,1,Fall,0.979492,1
+122,1,Fall,1,Fall,0.980469,1
+123,1,Fall,1,Fall,0.981445,1
+124,1,Fall,1,Fall,0.980957,1
+125,1,Fall,1,Fall,0.978516,1
+126,1,Fall,1,Fall,0.974609,1
+127,1,Fall,1,Fall,0.972656,1
+128,1,Fall,1,Fall,0.972656,1

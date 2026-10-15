@@ -1,0 +1,60 @@
+{
+  "project": "CCTV-Based Elderly Fall Detection",
+  "evaluation_date": "2026-10-16 00:15:24",
+  "evaluated_checkpoint": "./checkpoints/best_fall_detector.pth",
+  "checkpoint_epoch": 4,
+  "evaluation_split": "URFD Sequence-Stratified Disjoint Validation Set",
+  "sample_count": 129,
+  "class_distribution": {
+    "non_fall_adl": 66,
+    "fall": 63
+  },
+  "confusion_matrix": {
+    "true_negatives": 66,
+    "false_positives": 0,
+    "false_negatives": 5,
+    "true_positives": 58
+  },
+  "performance_metrics": {
+    "accuracy": 0.9612403100775194,
+    "precision": 1.0,
+    "recall_sensitivity": 0.9206349206349206,
+    "specificity": 1.0,
+    "f1_score": 0.9586776859504132,
+    "roc_auc": 0.9817219817219817,
+    "average_precision": 0.9870830636575649
+  },
+  "hardware_benchmark": {
+    "hardware": "NVIDIA GeForce GTX 1650 with Max-Q Design",
+    "input_dimensions": "1 x 16 x 3 x 224 x 224",
+    "repetitions": 100,
+    "pytorch_fp32_ms": {
+      "mean": 30.651542739868162,
+      "std": 0.22573096242256382,
+      "median": 30.53273582458496,
+      "p95": 30.98341703414917,
+      "fps": 32.62478526731086
+    },
+    "pytorch_amp_ms": {
+      "mean": 124.13526962280274,
+      "std": 4.544586156929231,
+      "median": 123.67265701293945,
+      "p95": 123.7556869506836,
+      "fps": 8.055728263519294
+    },
+    "full_pipeline_ms": {
+      "mean": 50.634158970096905,
+      "std": 1.4273092668718796,
+      "median": 50.458261499443324,
+      "p95": 51.16741720121354,
+      "fps": 19.74951337871676
+    },
+    "torchscript_ms": {
+      "mean": 31.00124990463257,
+      "std": 0.21195979887645244,
+      "median": 31.006400108337402,
+      "p95": 31.386559581756593,
+      "fps": 32.25676393939743
+    }
+  }
+}
